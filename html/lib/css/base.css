@@ -1,0 +1,156 @@
+/**
+Drk Brown															rgb(36,16,5) #241005
+Client List														[CLIENTS]
+Main Content													[MAIN]
+Header Elements												[HEAD]
+Lists of Content											[LISTS]
+Footer																[FOOTER]
+Fancy Buttons													[BUTTONS]
+**/
+
+/** Global Helpers 
+=========================================== **/
+html																	{background:rgb(237,237,237) url('/img/bkg/_bkg_html.png');}
+body                                  {border-top: rgb(157,205,221) solid 5px; text-align:center;}
+a                                     {text-decoration: none; color: rgba(54,144,173,1);}
+a:hover                               {color: rgba(118,118,118,1);}
+blockquote														{color: rgb(90,105,124)}
+li:nth-last-child(1)                  {border-bottom: none;}
+li cite																{display: block; margin-bottom: .2em; color: rgb(160,172,187);}
+h1, h2, h3, h4, h5, h6								{color: rgb(36,16,5);}
+h3																		{text-transform: uppercase;}
+hr																		{background-image: -webkit-gradient(linear,left bottom,right bottom,color-stop(0, rgb(255,255,255)),color-stop(0.1, rgb(221,221,221)),color-stop(0.9, rgb(221,221,221)),color-stop(1, rgb(255,255,255))); background-image: -moz-linear-gradient(left center,rgb(255,255,255) 0%,rgb(221,221,221) 10%,rgb(221,221,221) 90%,rgb(255,255,255) 100%);}
+p																			{margin-bottom: 1.375em;}
+img, audio, video											{width: 100%; max-width: 100%;}
+input, input[type="submit"].btn, select, textarea
+																			{display: block; margin: .5em 1%;}
+input, select													{height: 1.5em;}
+input[type="submit"]									{font-size: .9em; height: 2.7em;}
+input[type="text"], input[type="email"], textarea
+																			{width: 95%;}
+section.half													{width: 96%;}
+.page-actions													{position: relative; display: block; clear: both; padding: 1.5em 1em;}
+.hi-light															{background:rgb(252,247,207); padding:.25em .4em; border-radius:3px;}
+.inner																{padding: .2em;}
+.intro																{margin-top:2em;}
+.ipad																	{margin: 10px auto; background: #ddd; height: 1027px; width: 768px;}
+.iphone																{margin: 10px auto; background: #ddd; height: 480px; width: 320px;}
+ul.in-line, ul.pagination							{display: inline;}
+.in-line li, .pagination li						{float: left; display: inline-block;}
+.meta																	{background: rgba(240,242,244,1);}
+.meta p																{margin-bottom: 0; padding-bottom: 1.168em;}
+
+/* Standard layout sizes based on mobile first */
+.mobile, .wrapper											{max-width: 26.6666666em; position:relative; text-align:center;/*320/12*/}
+.wide																	{max-width: 96em;/*1152/12*/}
+.standard															{max-width: 80em;/*960/12*/}
+.tablet																{max-width: 64em;/*768/12*/}
+
+
+/** Header Elements										[HEAD]
+=============================================== **/
+#Capstone header											{padding:.2em .6em; color:rgb(254,249,246);}
+#Capstone															{background: rgba(195,227,238,.5); padding-bottom:5em;}
+#SiteNav															{display:none;}
+nav																		{}
+nav a                              		{display: block; border:rgba(151,151,151,.2) solid 1px;-moz-border-radius: .2em; -webkit-border-radius: .2em; border-radius: .2em; margin: .25em .3em; padding: .6em .6em .4em; background: rgba(255,255,255,.85); font-size:1.125em; text-transform: uppercase; text-shadow: rgba(251,251,251,1) 0 1px 1px;}
+
+nav a:hover														{-moz-box-shadow:rgba(18,160,237,.6) 0 0 2px 2px; -webkit-box-shadow:rgba(18,160,237,.6) 0 0 2px 2px; box-shadow:rgba(18,160,237,.6) 0 0 2px 2px; border:rgba(18,160,237,1) 1px solid;}
+
+a.logo, a.logo:hover									{margin:0 auto; overflow: hidden; background: transparent url('/img/logo.png') no-repeat 10px 0; box-shadow: none; text-indent: -9999999px;}
+
+body.plans a#NavPlans, body.tour a#NavTour
+																			{-moz-border-radius: .3em; -webkit-border-radius: .3em; border-radius: .3em; background: rgb(220,9,94); color: rgba(255,255,255,1); text-shadow: rgb(220,9,94) 0 1px 0;}
+
+.screens															{display:none;}
+
+/** Main Elements											[MAIN]
+=============================================== **/
+#Main																	{-moz-border-radiius: .2em; -webkit-border-radiius: .2em; border-radiius: .2em; background: rgba(255,255,255,.85); -moz-box-shadow: rgba(151,151,151,.5) 0 0 2px 1px; -webkit-box-shadow: rgba(151,151,151,.5) 0 0 2px 1px; box-shadow: rgba(151,151,151,.5) 0 0 2px 1px; margin-top:-4em; padding-top: 1.2em; font-size: 1.1667em;}
+.callout															{font-size: 1.25em;}
+
+fieldset																{margin-bottom:.5em;}
+form label, form li label								{line-height:2em; width:100%;}
+input, input[type="email"]							{width:94%;}
+input.btn																{width:auto;}
+input[type="submit"]									  {height:2.75em;}                                                                                                                                                                                                                                                                                                                 
+input[type="submit"].btn-primary				{font-size:1.375em;}                                                                                                                                                                                                                                                                                                                   
+header                            			{margin:1.2em 0 .8em; text-align:center; text-shadow:#fff 0 1px 2px;}                                                                                                                                                                                                                                                                  
+h1                                			{color:#261005; font-size:3.125em; font-weight:bold;}                                                                                                                                                                                                                                                                                  
+h2                                			{color:#261005; font-size:1.75em; font-weight:bold;}                                                                                                                                                                                                                                                                                   
+                                                                                                                                                                                                                                                                                                                                                                             
+form                              			{-moz-box-shadow:rgba(51,51,51,.6) 0 1px 5px; -webkit-box-shadow:rgba(51,51,51,.6) 0 1px 5px; box-shadow:rgba(51,51,51,.4) 0 1px 5px; background:#f1f1f1 url('/images/sign-in-bg.png') right top no-repeat; border:rgb(215,215,215) 1px solid; -webkit-border-radius:.5em; -moz-border-radius:.5em; border-radius:.5em; margin:0 auto 2em; padding:1em 1em .5em; text-align:left;}
+
+input																		{height:1.75em; font-size:1.25em;}
+
+
+/** Footer elements.                  [FOOTER]
+=========================================== **/
+footer#StickyFooter                   {color: #a1adbc; text-shadow: rgba(251,251,251,1) 0 .1em .1em; }
+/* Sticky Footer */
+#StickyWrap                           {min-height: 100%; padding-bottom: 8em; }
+#Main                                 {padding-bottom: 1.5em; } /* must be same height as the footer */
+#StickyFooter                         {position: relative; clear: both; margin-top: 0; padding: 2em 0; height: 8em;} /* negative value of footer height */
+
+
+/** Fancy Buttons                     [BUTTONS]
+=========================================== 
+.btn, .do-action                      {margin: 0 4px; position: relative;}
+.btn-primary             							{-moz-box-shadow: rgba(218,218,218,.6) 0 0 0 3px; -webkit-box-shadow: rgba(218,218,218,.6) 0 0 0 3px; box-shadow: rgba(218,218,218,.6) 0 0 0 3px; border: 1px solid rgba(220,9,94,1); background: rgb(220,9,94); background: -moz-linear-gradient(center bottom,rgb(220,9,94) 0%,rgb(249,98,158) 60%,rgb(251,162,202) 99%,rgb(254,230,240) 100% ); background: -webkit-gradient(linear,left bottom,left top,color-stop(0, rgb(220,9,94)),color-stop(0.60, rgb(249,98,158)),color-stop(.98, rgb(251,162,202)),color-stop(.99, rgb(254,230,240))); color: #fbfbfb; text-shadow: rgb(220,9,94) 1px 0 1px;}
+
+.btn-primary:hover, .btn-primary: focus {-moz-box-shadow: rgba(220,9,94,.5) 0 0 4px; -webkit-box-shadow: rgba(220,9,94,.5) 0 0 4px; box-shadow: rgba(220,9,94,.5) 0 0 4px; border: 1px solid rgba(220,9,94,1); background: rgba(245,15,119,1); background: -moz-linear-gradient(center bottom,rgb(245,15,119) 0%,rgb(247,64,146) 99%,rgb(254,230,240) 100% ); background: -webkit-gradient(linear,left bottom,left top,color-stop(0, rgb(245,15,119)),color-stop(.98, rgb(247,64,146)),color-stop(.99, rgb(254,230,240))); color: rgb(251,251,251); text-shadow: rgb(245,15,119) 1px 1px 2px;}**/
+
+
+/** Flash Notice
+ ======================================== */
+.flash, .notice												{-moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; background: #f9f5c9; margin: 0 0 1em; padding: .5em .8em; color: #d09300; font-size: 1.2em;}
+.flash:hover                         	{color: #ab7900;}
+.flash p, .notice p                   {margin: 0 0 .6em;}
+
+/** Mediq query adjustments
+ ======================================== */
+/* iPhone 4 ----------- */
+@media only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-device-pixel-ratio : 1.5) {
+/* Styles */
+}
+
+/* Tablet ----------- */
+@media only screen and (min-width : 768px) {
+	body																{text-align:left;}
+	section															{padding:0 2%;}
+	.page-actions												{padding:.5em; text-align:center;}
+	.wrapper														{max-width: 64em;}
+	#SiteNav														{display:block; padding-right:.5em;}
+	#FooterNav													{display:none;}
+	nav																	{float:right; height: 3em; text-align:center;}
+	nav a																{float: left; display: inline-block; -moz-box-shadow: rgba(151,151,151,.4) 0 0 .3em .1em; -webkit-box-shadow: rgba(151,151,151,.4) 0 0 .3em .1em; box-shadow: rgba(151,151,151,.4) 0 0 .3em .1em; } 
+
+	h1#Logo															{display:inline-block; float:left; width: 64.6666667%; text-align:left;}
+
+	.callout														{width:61.8%;}
+	.screens														{width:34.2%;}
+	section.half												{width: 44%;}
+	.address, .copyright, .showcase-card, .profile-card
+																			{float: left; display: inline-block; text-align: left;}
+	.address														{width: 23%;}
+	.copyright													{width: 67%;}
+	
+	.showcase-card, .profile-card				{width: 31.3333333%; margin: .5em 1%;}
+
+	/**	Plans and Pricing									[PLANS]
+	=========================================== **/
+	#Plans															{text-align:center;}
+	.plan-card													{float:left; display:inline-block; width: 21.5%; margin:.5em 1%;}
+	.plans #Capstone .callout						{width:100%;}
+	/*#Capstone														{min-height: 24em;}*/
+}
+
+/* Desktop ----------- */
+@media only screen and (min-width : 1024px) {
+	.wrapper														{max-width: 80em;}
+	.showcase li												{width: 29.33333333%; min-width: 5.5em; padding: 1%;}
+	
+	/**	Plans and Pricing									[PLANS]
+	=========================================== **/
+	.plan-card													{width: 21.7%;}
+}
