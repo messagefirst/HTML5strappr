@@ -1,20 +1,13 @@
-/**
-Font Stack
-
-Headings							Quatro Slab, Aurea Ultra, FF Tisa Web Pro Bold, Adelle
-Body									DIN OT Condensed, FF Tisa Web Pro
-**/
-
-/* Default font settings. 
--------------------------------------------------------------- */
-body	 								{font-size:75%; font-family:'Myriad Pro', 'Lucida Grande', 'Helvetica Neue', Verdana, Arial, sans-serif; vertical-align:baseline; line-height:1.1618; color:#2a2a2a; text-shadow:rgba(255,255,255,.92) 0 1px 0;
+/** Default font settings. 
+=========================================== **/
+body	 								{font-size:75%; font-family:'Myriad Pro', 'Lucida Grande', 'Helvetica Neue', Verdana, Arial, sans-serif; vertical-align:baseline; line-height:1.1618; color:#2a2a2a; text-shadow:rgba(255,255,255,.92) 0 1px 0; 
 }/*Use 75% for 12px and 81.25% for 13px*/
 
 
-/* Headings
--------------------------------------------------------------- */
+/** Headings
+=========================================== **/
 h1, h2, h3, h4, h5, h6, legend 
-											{margin-bottom:.125em; font-family:'Myriad Pro', 'Helvetica Neue', Helvetica, sans-serif; font-weight:bold; color:#2a2a2a; letter-spacing:-.0618em; text-shadow:rgba(255,255,255,0.6) 0 1px 0}
+											{margin-bottom:.125em; font-weight:bold; color:#2a2a2a; letter-spacing:-.0618em; text-shadow:rgba(255,255,255,0.6) 0 1px 0}
 h3, h4, h5, h6				{color:#5d5d5d;}
 h1 										{font-size:3.2em;}
 h2 										{font-size:2.4em;}
@@ -24,7 +17,6 @@ h5 										{font-size:1em; text-transform:uppercase;}
 h6 										{font-size:1em; font-weight:normal;}
 legend								{font-size:1.375em;}
             
-
 /** Text elements
 =========================================== **/
 p 										{margin:0 0 1.618em 0; line-height:1.618em;}
@@ -41,16 +33,14 @@ em, dfn 							{font-style:italic;}
 dfn 									{font-weight:bold;}
 sup, sub 							{line-height:0;}
             
-abbr,       
-acronym 							{border-bottom:1px dotted rgb(105,105,105);}
+abbr, acronym 				{border-bottom:1px dotted rgb(105,105,105);}
 address 							{margin:0 0 1.5em; font-style:italic;}
 del 									{color:#666;}
             
 pre, code 						{margin:1.5em 0; white-space:pre;}
-pre, code,  
-tt 										{font:1em 'andale mono', 'lucida console', monospace; line-height:1.5;}            
+pre, code, tt 				{font:1em 'Andale Mono', 'lucida console', monospace; line-height:1.5;}
             
-
+            
 /** Lists    
 =========================================== **/
 li ul, li ol					{line-height:.875em; color:#4a4a4a;}
@@ -71,6 +61,7 @@ th 										{font-weight:bold; background:#eaeae1;}
 th, td 								{padding:4px 5px;}
 tr.odd td							{background:#fafaf0;} /* zebra striping—can be done w/using CSS3 selectors */
 tr.even td 						{background:#e5ecf9;}
+
 tfoot 								{font-style:italic;}
 caption 							{background:#eee;}
             

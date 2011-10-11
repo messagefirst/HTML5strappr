@@ -1,23 +1,23 @@
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, article, aside, caption, code, del, details, dfn, em, img, q, dl, dt, dd, ol, ul, li, 
 fieldset, form, footer, header, hgroup, input, label, legend, section, table, textarea, tbody, tfoot, thead, tr, th, td 
-									{margin:0; padding:0; border:0; font-weight:inherit; font-style:inherit; font-size:100%; font-family:inherit; vertical-align:baseline; list-style:none; outline:none;}
-body							{line-height:1.1618;}
+									{margin:0; padding:0; border:0; font-weight:inherit; font-style:inherit; font-size:100%; font-family:inherit; vertical-align:baseline; list-style:none; outline:none}
+body							{line-height:1.1618}
 table							{border-collapse:separate; border-spacing:0; width:100%;}
-caption, th, td		{text-align:left; font-weight:normal;}
-table, td, th 		{vertical-align:middle;}
+caption, th, td		{text-align:left; font-weight:normal}
+table, td, th 		{vertical-align:middle}
 
 blockquote:before, 
 blockquote:after, 
 q:before, 
 q:after						{content:""}
 blockquote, q 		{quotes:"" ""}
-a img							{border:none;}
+a img							{border:none}
 
-h1 img, h2 img, h3 img, h4 img, h5 img, h6 img {margin:0;}
+h1 img, h2 img, h3 img, h4 img, h5 img, h6 img {margin:0}
 
 article, aside, footer, header, hgroup, nav, section		
-									{display:block;}
+									{display:block}
 									
-@media all and (max-device-width : 810px) {
-	* { -webkit-text-size-adjust : 100%;}
+@media screen and (max-device-width: 810px) {
+	* { -webkit-text-size-adjust: 100%; }
 }

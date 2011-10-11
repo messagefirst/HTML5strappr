@@ -1,0 +1,159 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<!--[if lte IE 6]><link rel="stylesheet" href="http://universal-ie6-css.googlecode.com/files/ie6.1.0b.css" media="screen, projection"><![endif]-->
+	<link href="lib/css/style.css" rel="stylesheet" media="screen, projection">
+	<!-- plugins -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+	<script src="lib/js/hashgrid.js"></script> 
+	<script src="lib/js/jquery.placeholder.min.js"></script>
+	<script src="lib/js/jquery.respond.min.js"></script>
+	<!-- custom scripts -->
+	<script src="lib/js/base.js"></script> 
+	<script type="text/javascript" src="http://use.typekit.com/utf5kup.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+	<title>Typography Patterns and HTML5 Input Types</title>
+</head>
+<body>
+<div id="StickyWrap" class="wrapper">
+	<header>
+		<nav>
+			<a href="#">Home</a>
+			<a href="#">Nav</a>
+			<a href="#">Nav 2</a>
+		</nav>
+	</header>
+	<article id="Main">
+		<section>
+			<h3 class="quiet">Typography styles</h3>
+			<h1>This is an h1</h1>
+			<h2>This is an h2</h2>
+			<h3>This is an h3</h3>
+			<h4>This is an h4</h4>
+			<h5>This is an h5</h5>
+			<h6>This is an h6</h6>
+			<hr>
+			<p>
+				Example of paragraph text.
+			</p>
+			<ul>
+				<li>List item one</li>
+				<li>List item two</li>
+				<li>List item three</li>
+				<li>List item four</li>
+				<li>List item five</li>
+			</ul>
+			<code>Example source code</code>
+			<hr>
+		</section>
+		<section>
+			<h3 class="quiet">Forms and Calls to Action</h3>
+			<form action="" method="" accept-charset="utf-8">
+				<fieldset>
+					<legend>Example form</legend>
+					<ol>
+						<li><input type="text" name="Name" placeholder="Enter your full name" class="placeholder" required></li>
+						<li><input type="email" name="Email" placeholder="Enter your email address" class="placeholder" required></li>
+						<li><input type="url" name="URL" placeholder="Enter your web address" class="placeholder" required></li>
+						<li><input type="tel" name="Tel" placeholder="+1 123 456 7890" class="placeholder" required></li>
+						<li><input type="file"></li>
+						<li><input type="submit" name="Send" value="Send it" class="btn"> <span class="quiet">or</span> <a href="#" class="admin">Cancel, don't send</a></li>
+					</ol>
+				</fieldset>
+				<fieldset>
+					<legend>HTML5 Input Types</legend>
+					<ul>
+						<li><label class="one-fifth">Color</label><input type="color" placeholder="#222222"></li>
+						<li><label class="one-fifth">Currency</label><em class="quiet">$</em><input type="currency" placeholder="0.00"></li>
+						<li><label class="one-fifth">Email</label><input type="email" placeholder="steve@pointroll.com"></li>
+						<li><label class="one-fifth">Date/Time</label><input type="date" placeholder="03/22/2011" class="datepicker"><input type="time" class="time" placeholder="12:34"></li>
+						<li><label class="one-fifth">Month</label><input type="month" placeholder="03/2011" class="datepicker"></li>
+						<li><label class="one-fifth">Duration</label>
+								<div class="one-fifth"><em>From </em><input type="date" placeholder="03/22/2011" class="datepicker"></div>				
+								<div class="one-fifth"><em>To </em><input type="date" placeholder="03/22/2011" class="datepicker"></div>
+						</li>
+						<li><label class="one-fifth">File Upload</label><input type="file" class="one-fifth"></li>
+						<li><label class="one-fifth">File Upload w/Tags</label><input type="file" class="one-fifth"><input type="text" class="one-fifth" placeholder="Enter tags"></li>
+						<li><label class="one-fifth">Fraction</label><input type="number" placeholder=""><em class="quiet">/</em><input type="number" placeholder=""></li>		
+						<li><label class="one-fifth">Min/Max</label><input type="number" placeholder="Min"><em class="quiet">-</em><input type="number" placeholder="Max"></li>
+						<li><label class="one-fifth">Percentage</label><input type="number" class="mini"><em class="quiet">%</em></li>
+						<li><label class="one-fifth">Number</label><input type="number" placeholder=""></li>
+						<li><label class="one-fifth">Telephone Number</label><input type="tel" placeholder="+1 123 456-7890"></li>
+						<li><label class="one-fifth">Text</label><input type="text" placeholder="Enter some text"></li>
+						<li><label class="one-fifth">Search</label><input type="search" placeholder="Search" class="placeholder"></li>
+						<li><label class="one-fifth">URL</label><input type="url" placeholder="http://"></li>
+						<li><label class="one-fifth">Select/List</label>
+							<select>
+								<option value="option1">Value 1</option>
+								<option value="option2">Value 2</option>
+							</select>
+						</li>
+					</ul>
+				</fieldset>
+			</form>
+			<hr>
+		</section>
+		<section>
+			<h3 class="quiet">Inline CTAs (Google Style)</h3>
+			<ul>
+				<li class="clearfix">
+					<nav class="inline-cta">
+						<a href="#" class="btn first"> <input type="checkbox" name="Select All" id="SelectAll"> <label for="SelectAll">Select All</label></a>
+						<a href="#" class="btn">Add Item</a>
+						<a href="#" class="btn last">Filter</a>
+					</nav>
+				</li>
+				<li class="clearfix">
+					<nav class="inline-cta">
+						<a href="#" class="btn first">Add Item</a>
+						<a href="#" class="btn last">Filter</a>
+					</nav>					
+				</li>
+				<li class="clearfix">
+					<nav class="inline-cta">
+						<a href="#" class="btn first">Activate</a>
+						<a href="#" class="btn">Edit</a>
+						<a href="#" class="btn last"><span class="more"></span></a>
+					</nav>					
+				</li>
+			</ul>				
+		</section>
+		<section>
+			<h3 class="quiet">Table styles</h3>
+			<table cellspacing="0">
+				<tr>
+					<th>Header</th>
+					<th>Header</th>
+					<th>Header</th>
+				</tr>
+				<tr>
+					<td>Data</td>
+					<td>Data</td>
+					<td>Data</td>
+				</tr>
+				<tr class="odd">
+					<td>Data</td>
+					<td>Data</td>
+					<td>Data</td>
+				</tr>
+				<tr>
+					<td>Data</td>
+					<td>Data</td>
+					<td>Data</td>
+				</tr>
+			</table>
+		</section>
+	</article>
+</div>
+<!--BEGIN FOOTER-->
+<footer id="StickyFooter">
+	<div class="wrapper">
+		Footer
+	</div>
+</footer>
+</body>
+</html>

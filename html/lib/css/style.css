@@ -5,8 +5,8 @@ See copyright © info in README file.
 /* Important! Keep this order, DO NOT Change! */
 @import 'reset.css';
 @import 'typography.css';
-@import 'layout.css';
 @import 'forms.css';
+@import 'layout.css';
 @import 'base.css';
 @import 'hashgrid.css';
 /*@import 'custom.css';*/
