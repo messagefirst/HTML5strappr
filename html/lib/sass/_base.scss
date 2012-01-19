@@ -1,0 +1,28 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+$blue: rgb(18,156,235);
+$charcoal: rgb(70,63,76);
+$dark: rgb(36,16,5);
+$green: rgb(87,169,87);
+$grey-dark: rgb(91,91,91);
+$grey-medium: rgb(138,138,138);
+$grey-slate: rgb(161,173,188);
+$red: rgb(197,33,21);
+$yellow: rgb(255,255,205);
+$white: rgb(255,255,255);
+$white-pepper: rgb(251,251,251);
+$golden: 1.61803398875em;
+$radius: 2px;
+$transition: .2s;
+
+@mixin inline             { display: -moz-inline-stack; display: inline-block; }
+@mixin border-radius      { -moz-border-radius: $radius; -webkit-border-radius: $radius; border-radius: $radius; }
+
+@import "reset";
+@import "typography";
+@import "forms";
+@import "layout";
+/*@import "ggs";*/

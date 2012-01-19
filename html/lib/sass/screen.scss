@@ -1,0 +1,70 @@
+@import "base";
+/** GLOBAL HELPERS
+=========================================== **/
+html																	{ }
+body, img															{ transition: all $transition linear; -o-transition: all $transition linear; -moz-transition: all $transition linear; -webkit-transition: all $transition linear; text-align: left; }
+article																{ font-size: 1em; }
+cite                                  { color: $grey-slate; }
+h1, h2, h3, h4, h5, h6								{ color: $charcoal; text-align: center; font-weight: 400;}
+hr																		{ background-image: -webkit-gradient(linear,left bottom,right bottom,color-stop(0, rgb(255,255,255)),color-stop(0.1, rgb(221,221,221)),color-stop(0.9, rgb(221,221,221)),color-stop(1, rgb(255,255,255))); background-image: -moz-linear-gradient(left center,rgb(255,255,255) 0%,rgb(221,221,221) 10%,rgb(221,221,221) 90%,rgb(255,255,255) 100%); }
+
+.wrapper															{ width: 98%; }
+
+/** HEADER														[HEAD]
+=========================================== **/
+nav[role="navigation"]								{ position: fixed; top: 0; left: 0; background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 1.00)), to(rgba(255, 255, 255, 0.80))); background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 1.00), rgba(255, 255, 255, 0.80)); background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 1.00), rgba(255, 255, 255, 0.80)); background-image: linear-gradient(top, rgba(255, 255, 255, 1.00), rgba(255, 255, 255, 0.80)); border-bottom: rgb(158,158,158) solid 1px; height: 2em; width:100%; text-align: center; }
+nav a                                 { @include inline; margin-bottom: .1em; padding: .5em .6em; line-height: 1em; text-transform: uppercase; text-shadow: rgba(251,251,251,1) 0 1px 1px; 
+  &:hover                             { border-bottom: $charcoal solid 2px; }
+}
+
+.home #NavHome												{ border-bottom: $blue solid 2px; } /* Use the class on the body and ID on the nav item to create an active state w/o adding classes to the nav or JS */
+
+
+/** MAIN															[MAIN]
+=========================================== **/
+#Main																	{ background-color: rgba(255,255,255,.4); margin-top: 1.85em; padding: .8em 1.4em; 
+  article, h1, h2, h3, h4, h5         { text-align: left; }
+}
+
+
+/** FOOTER                  					[FOOTER]
+=========================================== **/
+footer[role="footer"]						      { background: rgba(36,16,5,.1);
+  section[role="meta"]                { padding: 2.75em 1.4em; } 
+  section[role="copyright"]           { @extend section[role="meta"]; text-align: center; }
+  div[role="books"], div[role="social"]
+                                      { margin-bottom: $golden; }
+  h3                                  { text-align: left; }
+  a                                   { color: $dark; }
+}
+
+
+/** MEDIA QUERIES                  		[MQ]
+=========================================== **/
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+/* Styles */
+}
+
+/* iPads (portrait and landscape) ---- 768/12 */
+@media only screen 
+and (min-width : 768px)
+and (max-width : 1023px) { 
+	.wrapper														{ max-width: 64em; }
+  #Main, section[role="meta"]         { padding: .8em 2.2em; }	
+}
+
+/* Standard -------------------------- 960/12 */
+@media only screen 
+and (min-width : 1024px) { 
+  article, footer[role="footer"]      { font-size: 1.125em; }
+	.wrapper														{ max-width: 80em; }
+}
+
+/* Widescree------------------------- 1152/12 */
+@media only screen 
+and (min-width : 1152px) { 
+	.wrapper														{ max-width: 96em; }
+}

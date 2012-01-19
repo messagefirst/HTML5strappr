@@ -1,0 +1,44 @@
+/** LAYOUT
+=============================================== **/
+html, body								{ height: 100%; position: relative;}
+
+.wrapper									{ margin: 0 auto; width: 98%;}
+
+.wide											{ max-width: 96em;}
+.standard									{ max-width: 80em;}
+.tablet										{ max-width: 64em;}
+.mobile										{ max-width: 26.6666666em;}
+
+.full, .half, .golden-sm, .golden-lrg, .one-third, .two-thirds, .one-fourth, .three-fourths, .one-fifth, .two-fifths, .three-fifths, .four-fifths												
+													{ float: left; @include inline; }
+                    
+.full											{ width: 98%; }
+.half											{ width: 48%;}
+                    
+/* Golden Ration */ 
+.golden-sm								{ width: 34.2%;}
+.golden-lrg								{ width: 61.8%;}
+                    
+/* 3 Columns */     
+.one-third								{ width: 31.3333333%;}
+.two-thirds								{ width: 64.6666667%;}
+                    
+/* 4 Columns */     
+.one-fourth								{ width: 23%;}
+.three-fourths						{ width: 73%;}
+                    
+/* 5 Columns */     
+.one-fifth								{ width: 18%;}
+.two-fifths								{ width: 38%;}
+.three-fifths							{ width: 58%;}
+.four-fifths							{ width: 78%;}
+                    
+.right										{ float: right;}
+                    
+/* Clearfix for clearing floated elements */
+/* new clearfix */  
+.clearfix:after, header[role="masthead"]:after, nav[role="navigation"]:after
+                          { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+* html .clearfix    			{ zoom: 1;}
+*:first-child+html .clearfix
+													{ zoom: 1;}

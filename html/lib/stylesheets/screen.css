@@ -1,0 +1,455 @@
+/* Welcome to Compass. In this file you should write your main styles. (or centralize your imports) Import this file using the following HTML or equivalent: <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/** RESET
+=============================================== **/
+/* line 5, ../sass/_reset.scss */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, article, aside, caption, code, del, details, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, footer, header, hgroup, input, label, legend, section, table, textarea, tbody, tfoot, thead, tr, th, td { margin: 0; padding: 0; border: 0; font-weight: inherit; font-style: inherit; font-size: 100%; font-family: inherit; vertical-align: baseline; list-style: none; outline: none; }
+
+/* line 6, ../sass/_reset.scss */
+body { line-height: 1.1618; }
+
+/* line 7, ../sass/_reset.scss */
+table { border-collapse: separate; border-spacing: 0; width: 100%; }
+
+/* line 8, ../sass/_reset.scss */
+caption, th, td { text-align: left; font-weight: normal; }
+
+/* line 9, ../sass/_reset.scss */
+table, td, th { vertical-align: middle; }
+
+/* line 14, ../sass/_reset.scss */
+blockquote:before, blockquote:after, q:before, q:after { content: ""; }
+
+/* line 15, ../sass/_reset.scss */
+blockquote, q { quotes: "" ""; }
+
+/* line 16, ../sass/_reset.scss */
+a img { border: none; }
+
+/* line 18, ../sass/_reset.scss */
+h1 img, h2 img, h3 img, h4 img, h5 img, h6 img { margin: 0; }
+
+/* line 21, ../sass/_reset.scss */
+article, aside, footer, header, hgroup, nav, section { display: block; }
+
+@media screen and (max-device-width: 810px) { /* line 24, ../sass/_reset.scss */
+  * { -webkit-text-size-adjust: 100%; } }
+/** GLOBAL FONT SETTINGS 
+=========================================== **/
+/* line 3, ../sass/_typography.scss */
+body { font-size: 75%; font-family: 'Myriad Pro', 'Lucida Grande', 'Helvetica Neue', Verdana, Arial, sans-serif; vertical-align: baseline; line-height: 1.1618; color: #241005; text-shadow: rgba(255, 255, 255, 0.92) 0 1px 0; text-rendering: optimizeLegibility; }
+
+/*Use 75% for 12px and 81.25% for 13px*/
+/** HEADINGS
+=========================================== **/
+/* line 9, ../sass/_typography.scss */
+h1, h2, h3, h4, h5, h6, legend { margin-bottom: .125em; font-weight: bold; color: #241005; letter-spacing: -0.062em; text-shadow: rgba(255, 255, 255, 0.6) 0 1px 0; }
+
+/* line 10, ../sass/_typography.scss */
+h3, h4, h5, h6 { color: #5d5d5d; }
+
+/* line 11, ../sass/_typography.scss */
+h1 { font-size: 3.2em; }
+
+/* line 12, ../sass/_typography.scss */
+h2 { font-size: 2.4em; }
+
+/* line 13, ../sass/_typography.scss */
+h3 { font-size: 1.8em; }
+
+/* line 14, ../sass/_typography.scss */
+h4 { font-size: 1.375em; }
+
+/* line 15, ../sass/_typography.scss */
+h5 { font-size: 1em; text-transform: uppercase; }
+
+/* line 16, ../sass/_typography.scss */
+h6 { font-size: 1em; font-weight: normal; }
+
+/* line 17, ../sass/_typography.scss */
+legend { font-size: 1.375em; }
+
+/** TEXT
+=========================================== **/
+/* line 21, ../sass/_typography.scss */
+p { margin: 0 0 1.618em 0; line-height: 1.618em; }
+
+/* line 22, ../sass/_typography.scss */
+p img { float: left; margin: 0em 1.5em 1.5em 0; padding: 0; }
+
+/* line 23, ../sass/_typography.scss */
+p img.right { float: right; margin: 1.5em 0 1.5em 1.5em; }
+
+/* line 25, ../sass/_typography.scss */
+a:focus, a:hover { color: #241005; }
+
+/* line 26, ../sass/_typography.scss */
+a { color: #129ceb; text-decoration: none; }
+
+/* line 28, ../sass/_typography.scss */
+blockquote { margin: 1.5em; color: #7a7a7a; font-style: italic; }
+
+/* line 29, ../sass/_typography.scss */
+hr { clear: both; width: 100%; height: 1px; margin: 1.4em 0; border: none; background: #fbfbfb; }
+
+/* line 30, ../sass/_typography.scss */
+strong { font-weight: bold; }
+
+/* line 31, ../sass/_typography.scss */
+em, dfn { font-style: italic; }
+
+/* line 32, ../sass/_typography.scss */
+dfn { font-weight: bold; }
+
+/* line 33, ../sass/_typography.scss */
+sup, sub { line-height: 0; }
+
+/* line 35, ../sass/_typography.scss */
+abbr, acronym { border-bottom: 1px dotted #696969; }
+
+/* line 36, ../sass/_typography.scss */
+address { margin: 0 0 1.5em; font-style: italic; }
+
+/* line 37, ../sass/_typography.scss */
+del { color: #666; }
+
+/* line 39, ../sass/_typography.scss */
+pre, code { margin: 1.5em 0; white-space: pre; }
+
+/* line 40, ../sass/_typography.scss */
+pre, code, tt { font: 1em 'Andale Mono', 'lucida console', monospace; line-height: 1.5; }
+
+/** LISTS    
+=========================================== **/
+/* line 45, ../sass/_typography.scss */
+li ul, li ol { line-height: .875em; color: #4a4a4a; }
+
+/* line 46, ../sass/_typography.scss */
+li ul li { line-height: 1.125em; }
+
+/* line 48, ../sass/_typography.scss */
+ul { list-style-type: disc; }
+
+/* line 49, ../sass/_typography.scss */
+ol { list-style-type: decimal; }
+
+/* line 51, ../sass/_typography.scss */
+dl { margin: 0 0 1.5em 0; }
+
+/* line 52, ../sass/_typography.scss */
+dl dt { font-weight: bold; }
+
+/* line 53, ../sass/_typography.scss */
+dd { margin-left: 1.5em; }
+
+/** TABLES   
+=========================================== **/
+/* line 58, ../sass/_typography.scss */
+table { margin: 1.5em 0; width: 100%; }
+
+/* line 59, ../sass/_typography.scss */
+th { font-weight: bold; background: #fbfbfb; }
+
+/* line 60, ../sass/_typography.scss */
+th, td { padding: 4px 5px; }
+
+/* line 62, ../sass/_typography.scss */
+tfoot { font-style: italic; }
+
+/* line 63, ../sass/_typography.scss */
+caption { background: #eee; }
+
+/** MISC HELPERS
+=========================================== **/
+/* line 68, ../sass/_typography.scss */
+.quiet, .placeholder { color: #8a8a8a; }
+
+/* line 69, ../sass/_typography.scss */
+.loud { color: #121525; }
+
+/* line 70, ../sass/_typography.scss */
+.highlight { -moz-border-radius: .2em; -webkit-border-radius: .2em; border-radius: .2em; background: #ffffcd; padding: .1em .3em; }
+
+/* line 71, ../sass/_typography.scss */
+.admin { font-size: .9em; font-weight: normal; color: #9e0c00; }
+
+/* FORM LAYOUT ELEMENTS
+=============================================== **/
+/* line 3, ../sass/_forms.scss */
+fieldset { margin-bottom: 2em; position: relative; }
+
+/* line 4, ../sass/_forms.scss */
+form ul, form ol { margin-bottom: -0.5em; list-style: none; }
+
+/* line 5, ../sass/_forms.scss */
+form li, form li ul li { position: relative; padding: .3em 0; list-style: none; display: block; clear: both; text-align: left; }
+
+/* line 6, ../sass/_forms.scss */
+form li:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+
+/* line 8, ../sass/_forms.scss */
+label, input, form li label, form li ul li label { margin-bottom: .1em; }
+
+/* line 9, ../sass/_forms.scss */
+form label { display: block; line-height: 2.625em; }
+
+/* line 11, ../sass/_forms.scss */
+input[type="checkbox"], input[type="radio"] { margin-right: .5em; vertical-align: middle; }
+
+/* FORM INPUTS
+=============================================== **/
+/* line 14, ../sass/_forms.scss */
+input, textarea { height: 1.75em; padding: .3em; border: 1px solid #e1e1e1; color: #4a4a4a; -moz-border-radius: 2px; -webkit-border-radius: 2px; -moz-box-shadow: 0 1px 3px #f1f1f1; -webkit-box-shadow: 0 1px 3px #f1f1f1; font-size: 1em; line-height: 1.25em; }
+
+/* line 15, ../sass/_forms.scss */
+input.full, textarea.full, select.full { width: 96%; margin: 0 1%; }
+
+/* line 16, ../sass/_forms.scss */
+input:focus, textarea:focus { background: #ffe; }
+
+/* Form input widths */
+/* line 18, ../sass/_forms.scss */
+.mini { width: 4em; }
+
+/* line 19, ../sass/_forms.scss */
+input[type="color"] { width: 5em; }
+
+/* line 20, ../sass/_forms.scss */
+input[type="currency"] { width: 6em; }
+
+/* line 21, ../sass/_forms.scss */
+input[type="date"], input[type="month"] { width: 8.5em; }
+
+/* line 22, ../sass/_forms.scss */
+input[type="email"], input[type="text"] { width: 16em; }
+
+/* line 23, ../sass/_forms.scss */
+input[type="file"] { width: 20em; border: none; -moz-box-shadow: none; -webkit-box-shadow: none; }
+
+/* line 24, ../sass/_forms.scss */
+input[type="number"] { width: 4em; }
+
+/* line 25, ../sass/_forms.scss */
+input[type="time"] { width: 4.875em; }
+
+/* line 26, ../sass/_forms.scss */
+input[type="search"] { width: 20em; }
+
+/* line 27, ../sass/_forms.scss */
+input[type="tel"] { width: 10em; }
+
+/* line 29, ../sass/_forms.scss */
+input[type="currency"], input[type="number"], input[type="tel"] { text-align: right; }
+
+/* line 30, ../sass/_forms.scss */
+input[type="url"] { width: 20em; }
+
+/* line 31, ../sass/_forms.scss */
+select { width: 14em; margin-top: 5px; }
+
+/* Field input heights */
+/* line 33, ../sass/_forms.scss */
+.short { height: 2em; }
+
+/* line 34, ../sass/_forms.scss */
+.tall { height: 3em; }
+
+/* line 35, ../sass/_forms.scss */
+.giant { height: 8em; }
+
+/* BUTTONS
+=============================================== **/
+/* line 39, ../sass/_forms.scss */
+button, input[type="submit"] { height: 2.5em; padding: .4em .7em; line-height: 1.9em; }
+
+/* line 40, ../sass/_forms.scss */
+.btn { display: inline-block; border: 1px solid #d4d4cc; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; padding: .4em .7em; background: #edeff2; background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fefefe), color-stop(0.55, #edeff2), to(#e4e6e9)); background: -moz-linear-gradient(center top, #fefefe, #edeff2 55%, #e4e6e9); -moz-box-shadow: rgba(160, 172, 187, 0.7) 0 0 0.2em 0; -webkit-box-shadow: rgba(160, 172, 187, 0.7) 0 0 0.2em 0; box-shadow: rgba(160, 172, 187, 0.7) 0 0 0.2em 0; color: #6c7786; font-size: 1.1em; text-shadow: #fefefe 1px 0 1px; line-height: 1.375em; cursor: pointer; }
+
+/* line 41, ../sass/_forms.scss */
+.btn:hover, .btn:focus { -moz-box-shadow: #129ceb 0px 0px 2px; -webkit-box-shadow: #129ceb 0 0 2px; box-shadow: #129ceb 0 0 2px; background: #e6e9eb; background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f7f7f7), color-stop(0.55, #f6f6f7), to(#e6e9eb)); background: -moz-linear-gradient(center top, #f7f7f7, #f6f6f7 55%, #e6e9eb); color: #45484b; text-shadow: white 1px 1px 0; border-color: #c9c9c0; }
+
+/* default active state for all btns */
+/* line 45, ../sass/_forms.scss */
+.btn:active, a.btn:active, .btn.disabled, a.btn.disabled { background: #bbb; background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#dddddd), color-stop(0.55, #cccccc), to(#bbbbbb)); background: -moz-linear-gradient(center top, #dddddd, #cccccc 55%, #bbbbbb); border-color: #aaa #bbb #bbb; color: #8a8a8a; text-shadow: #ededed 1px 1px; }
+
+/* Inline CTAs Google Button Style */
+/* line 49, ../sass/_forms.scss */
+.btn.disabled:hover { -moz-box-shadow: 0 0 0; -webkit-box-shadow: 0 0 0; color: #8a8a8a; }
+
+/* line 50, ../sass/_forms.scss */
+.inline-cta input { height: auto; }
+
+/* line 51, ../sass/_forms.scss */
+.inline-cta a, .inline-cta a.btn { font-size: .8em; margin: 0; -moz-border-radius: 0; -webkit-border-radius: 0; border-radius: 0; border-left: 1px solid #f8f8f8; }
+
+/* line 52, ../sass/_forms.scss */
+.inline-cta a.btn:hover { -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; }
+
+/* line 53, ../sass/_forms.scss */
+.inline-cta a.first { border: 1px solid #d4d4cc; -moz-border-radius-topleft: 3px; -moz-border-radius-bottomleft: 3px; -webkit-border-top-left-radius: 3px; -webkit-border-bottom-left-radius: 3px; border-top-left-radius: 3px; border-bottom-left-radius: 3px; }
+
+/* line 54, ../sass/_forms.scss */
+.inline-cta a.last { -moz-border-radius-topright: 3px; -moz-border-radius-bottomright: 3px; -webkit-border-top-right-radius: 3px; -webkit-border-bottom-right-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; }
+
+/* line 55, ../sass/_forms.scss */
+.inline-cta span.more { background: transparent url("/img/sprite_ui_icons.png") -67px -13px no-repeat; text-indent: -99999px; height: 2em; width: 2em; padding: .5em; }
+
+/* line 56, ../sass/_forms.scss */
+.inline-cta .flat { background: #f9f9f9; }
+
+/** LAYOUT
+=============================================== **/
+/* line 3, ../sass/_layout.scss */
+html, body { height: 100%; position: relative; }
+
+/* line 5, ../sass/_layout.scss */
+.wrapper { margin: 0 auto; width: 98%; }
+
+/* line 7, ../sass/_layout.scss */
+.wide { max-width: 96em; }
+
+/* line 8, ../sass/_layout.scss */
+.standard { max-width: 80em; }
+
+/* line 9, ../sass/_layout.scss */
+.tablet { max-width: 64em; }
+
+/* line 10, ../sass/_layout.scss */
+.mobile { max-width: 26.6666666em; }
+
+/* line 13, ../sass/_layout.scss */
+.full, .half, .golden-sm, .golden-lrg, .one-third, .two-thirds, .one-fourth, .three-fourths, .one-fifth, .two-fifths, .three-fifths, .four-fifths { float: left; display: -moz-inline-stack; display: inline-block; }
+
+/* line 15, ../sass/_layout.scss */
+.full { width: 98%; }
+
+/* line 16, ../sass/_layout.scss */
+.half { width: 48%; }
+
+/* Golden Ration */
+/* line 19, ../sass/_layout.scss */
+.golden-sm { width: 34.2%; }
+
+/* line 20, ../sass/_layout.scss */
+.golden-lrg { width: 61.8%; }
+
+/* 3 Columns */
+/* line 23, ../sass/_layout.scss */
+.one-third { width: 31.3333333%; }
+
+/* line 24, ../sass/_layout.scss */
+.two-thirds { width: 64.6666667%; }
+
+/* 4 Columns */
+/* line 27, ../sass/_layout.scss */
+.one-fourth { width: 23%; }
+
+/* line 28, ../sass/_layout.scss */
+.three-fourths { width: 73%; }
+
+/* 5 Columns */
+/* line 31, ../sass/_layout.scss */
+.one-fifth { width: 18%; }
+
+/* line 32, ../sass/_layout.scss */
+.two-fifths { width: 38%; }
+
+/* line 33, ../sass/_layout.scss */
+.three-fifths { width: 58%; }
+
+/* line 34, ../sass/_layout.scss */
+.four-fifths { width: 78%; }
+
+/* line 36, ../sass/_layout.scss */
+.right { float: right; }
+
+/* Clearfix for clearing floated elements */
+/* new clearfix */
+/* line 41, ../sass/_layout.scss */
+.clearfix:after, header[role="masthead"]:after, nav[role="navigation"]:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+
+/* line 42, ../sass/_layout.scss */
+* html .clearfix { zoom: 1; }
+
+/* line 44, ../sass/_layout.scss */
+*:first-child + html .clearfix { zoom: 1; }
+
+/*@import "ggs";*/
+/** GLOBAL HELPERS
+=========================================== **/
+/* line 5, ../sass/screen.scss */
+body, img { transition: all 0.2s linear; -o-transition: all 0.2s linear; -moz-transition: all 0.2s linear; -webkit-transition: all 0.2s linear; text-align: left; }
+
+/* line 6, ../sass/screen.scss */
+article { font-size: 1em; }
+
+/* line 7, ../sass/screen.scss */
+cite { color: #a1adbc; }
+
+/* line 8, ../sass/screen.scss */
+h1, h2, h3, h4, h5, h6 { color: #463f4c; text-align: center; font-weight: 400; }
+
+/* line 9, ../sass/screen.scss */
+hr { background-image: -webkit-gradient(linear, left bottom, right bottom, color-stop(0, white), color-stop(0.1, #dddddd), color-stop(0.9, #dddddd), color-stop(1, white)); background-image: -moz-linear-gradient(left center, white 0%, #dddddd 10%, #dddddd 90%, white 100%); }
+
+/* line 11, ../sass/screen.scss */
+.wrapper { width: 98%; }
+
+/** HEADER														[HEAD]
+=========================================== **/
+/* line 15, ../sass/screen.scss */
+nav[role="navigation"] { position: fixed; top: 0; left: 0; background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(rgba(255, 255, 255, 0.8))); background-image: -webkit-linear-gradient(top, white, rgba(255, 255, 255, 0.8)); background-image: -moz-linear-gradient(top, white, rgba(255, 255, 255, 0.8)); background-image: linear-gradient(top, #ffffff, rgba(255, 255, 255, 0.8)); border-bottom: #9e9e9e solid 1px; height: 2em; width: 100%; text-align: center; }
+
+/* line 16, ../sass/screen.scss */
+nav a { display: -moz-inline-stack; display: inline-block; margin-bottom: .1em; padding: .5em .6em; line-height: 1em; text-transform: uppercase; text-shadow: #fbfbfb 0 1px 1px; }
+/* line 17, ../sass/screen.scss */
+nav a:hover { border-bottom: #463f4c solid 2px; }
+
+/* line 20, ../sass/screen.scss */
+.home #NavHome { border-bottom: #129ceb solid 2px; }
+
+/* Use the class on the body and ID on the nav item to create an active state w/o adding classes to the nav or JS */
+/** MAIN															[MAIN]
+=========================================== **/
+/* line 25, ../sass/screen.scss */
+#Main { background-color: rgba(255, 255, 255, 0.4); margin-top: 1.85em; padding: .8em 1.4em; }
+/* line 26, ../sass/screen.scss */
+#Main article, #Main h1, #Main h2, #Main h3, #Main h4, #Main h5 { text-align: left; }
+
+/** FOOTER                  					[FOOTER]
+=========================================== **/
+/* line 32, ../sass/screen.scss */
+footer[role="footer"] { background: rgba(36, 16, 5, 0.1); }
+/* line 33, ../sass/screen.scss */
+footer[role="footer"] section[role="meta"], footer[role="footer"] section[role="copyright"] { padding: 2.75em 1.4em; }
+/* line 34, ../sass/screen.scss */
+footer[role="footer"] section[role="copyright"] { text-align: center; }
+/* line 36, ../sass/screen.scss */
+footer[role="footer"] div[role="books"], footer[role="footer"] div[role="social"] { margin-bottom: 1.618em; }
+/* line 37, ../sass/screen.scss */
+footer[role="footer"] h3 { text-align: left; }
+/* line 38, ../sass/screen.scss */
+footer[role="footer"] a { color: #241005; }
+
+/** MEDIA QUERIES                  		[MQ]
+=========================================== **/
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) { /* Styles */ }
+/* iPads (portrait and landscape) ---- 768/12 */
+@media only screen 
+and (min-width : 768px)
+and (max-width : 1023px) { /* line 55, ../sass/screen.scss */
+  .wrapper { max-width: 64em; }
+  /* line 56, ../sass/screen.scss */
+  #Main, section[role="meta"], footer[role="footer"] section[role="copyright"] { padding: .8em 2.2em; } }
+/* Standard -------------------------- 960/12 */
+@media only screen 
+and (min-width : 1024px) { /* line 62, ../sass/screen.scss */
+  article, footer[role="footer"] { font-size: 1.125em; }
+  /* line 63, ../sass/screen.scss */
+  .wrapper { max-width: 80em; } }
+/* Widescree------------------------- 1152/12 */
+@media only screen 
+and (min-width : 1152px) { /* line 69, ../sass/screen.scss */
+  .wrapper { max-width: 96em; } }

@@ -1,14 +1,14 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-	<?php include 'lib/partials/_meta.php' ?>
-	<?php include 'lib/partials/_scripts.php' ?>
+	<?php include 'lib/partials/_meta.inc' ?>
+	<?php include 'lib/partials/_scripts.inc' ?>
 	<title>Rapleaf Demo</title>
 </head>
 <body class="dashboard">
 <div id="StickyWrap" class="wrapper">
 	<div id="HeadNav">
-		<?php include 'lib/partials/_nav.php' ?>
+		<?php include 'lib/partials/_nav.inc' ?>
 	</div>
 	<article id="Main">
 		<section>
@@ -70,6 +70,6 @@
 		</section>
 	</article>
 </div>
-<?php include 'lib/partials/_foot.php' ?>
+<?php include 'lib/partials/_foot.inc' ?>
 </body>
 </html>

@@ -1,0 +1,56 @@
+/* FORM LAYOUT ELEMENTS
+=============================================== **/
+fieldset                                { margin-bottom: 2em; position: relative; }
+form ul, form ol                        { margin-bottom: -.5em; list-style: none; }
+form li, form li ul li                  { position: relative; padding: .3em 0; list-style: none; display: block; clear: both; text-align: left; }
+form li:after                           { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+label, input, form li label, form li ul li label
+                                        { margin-bottom: .1em }
+form label                              { display: block; line-height: 2.625em; }
+input[type="checkbox"], input[type="radio"]
+                                        { margin-right: .5em; vertical-align: middle; }
+/* FORM INPUTS
+=============================================== **/
+input, textarea                         { height: 1.75em; padding: .3em; border: 1px solid #e1e1e1; color: #4a4a4a; -moz-border-radius: 2px; -webkit-border-radius: 2px; -moz-box-shadow: 0 1px 3px #f1f1f1; -webkit-box-shadow: 0 1px 3px #f1f1f1; font-size: 1em; line-height: 1.25em; }
+input.full, textarea.full, select.full  { width: 96%; margin: 0 1%; }
+input:focus, textarea:focus             { background: #ffe }
+/* Form input widths */
+.mini                                   { width: 4em }
+input[type="color"]                     { width: 5em }
+input[type="currency"]                  { width: 6em }
+input[type="date"], input[type="month"] { width: 8.5em }
+input[type="email"], input[type="text"] { width: 16em }
+input[type="file"]                      { width: 20em; border: none; -moz-box-shadow: none; -webkit-box-shadow: none; }
+input[type="number"]                    { width: 4em }
+input[type="time"]                      { width: 4.875em }
+input[type="search"]                    { width: 20em }
+input[type="tel"]                       { width: 10em }
+input[type="currency"], input[type="number"], input[type="tel"]
+                                        { text-align: right }
+input[type="url"]                       { width: 20em }
+select                                  { width: 14em; margin-top: 5px; }
+/* Field input heights */
+.short                                  { height: 2em }
+.tall                                   { height: 3em }
+.giant                                  { height: 8em }
+
+/* BUTTONS
+=============================================== **/
+button, input[type="submit"]            { height: 2.5em; padding: .4em .7em; line-height: 1.9em; }
+.btn                                    { display: inline-block; border: 1px solid #d4d4cc; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; padding: .4em .7em; background: #edeff2; background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fefefe), color-stop(0.55, #edeff2), to(#e4e6e9)); background: -moz-linear-gradient(center top, #fefefe, #edeff2 55%, #e4e6e9); -moz-box-shadow: rgba(160,172,187,.7) 0 0 .2em 0; -webkit-box-shadow: rgba(160,172,187,.7) 0 0 .2em 0; box-shadow: rgba(160,172,187,.7) 0 0 .2em 0; color: #6c7786; font-size: 1.1em; text-shadow: #fefefe 1px 0 1px; line-height: 1.375em; cursor: pointer; }
+.btn:hover, .btn:focus                  { -moz-box-shadow: #129ceb 0px 0px 2px; -webkit-box-shadow: #129ceb 0 0 2px; box-shadow: #129ceb 0 0 2px; background: #e6e9eb; background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f7f7f7), color-stop(0.55, #f6f6f7), to(#e6e9eb)); background: -moz-linear-gradient(center top, #f7f7f7, #f6f6f7 55%, #e6e9eb); color: #45484b; text-shadow: rgb(255,255,255) 1px 1px 0; border-color: #c9c9c0; }
+
+/* default active state for all btns */
+.btn:active, a.btn:active, .btn.disabled, a.btn.disabled
+                                        { background: #bbb; background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ddd), color-stop(0.55, #ccc), to(#bbb)); background: -moz-linear-gradient(center top, #ddd, #ccc 55%, #bbb); border-color: #aaa #bbb #bbb; color: #8a8a8a; text-shadow: #ededed 1px 1px; }
+
+/* Inline CTAs Google Button Style */
+
+.btn.disabled:hover                     { -moz-box-shadow: 0 0 0; -webkit-box-shadow: 0 0 0; color: #8a8a8a; }
+.inline-cta input                       { height: auto }
+.inline-cta a, .inline-cta a.btn        { font-size: .8em; margin: 0; -moz-border-radius: 0; -webkit-border-radius: 0; border-radius: 0; border-left: 1px solid #f8f8f8; }
+.inline-cta a.btn:hover                 { -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; }
+.inline-cta a.first                     { border: 1px solid #d4d4cc; -moz-border-radius-topleft: 3px; -moz-border-radius-bottomleft: 3px; -webkit-border-top-left-radius: 3px; -webkit-border-bottom-left-radius: 3px; border-top-left-radius: 3px; border-bottom-left-radius: 3px; }
+.inline-cta a.last                      { -moz-border-radius-topright: 3px; -moz-border-radius-bottomright: 3px; -webkit-border-top-right-radius: 3px; -webkit-border-bottom-right-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; }
+.inline-cta span.more                   { background: transparent url('/img/sprite_ui_icons.png') -67px -13px no-repeat; text-indent: -99999px; height: 2em; width: 2em; padding: .5em; }
+.inline-cta .flat                       { background: #f9f9f9 }
