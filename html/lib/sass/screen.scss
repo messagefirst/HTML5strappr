@@ -29,7 +29,7 @@ nav a                                 { @include inline; margin-bottom: .1em; pa
 
 /** FOOTER                  					[FOOTER]
 =========================================== **/
-footer[role="footer"]						      { background: rgba(36,16,5,.1);
+footer[role="footer"]						      { background: $white-pepper;
   section[role="meta"]                { padding: 2.75em 1.4em; } 
   section[role="copyright"]           { @extend section[role="meta"]; text-align: center; }
   div[role="books"], div[role="social"]

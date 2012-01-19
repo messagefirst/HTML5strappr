@@ -418,7 +418,7 @@ nav a:hover { border-bottom: #463f4c solid 2px; }
 /** FOOTER                  					[FOOTER]
 =========================================== **/
 /* line 32, ../sass/screen.scss */
-footer[role="footer"] { background: rgba(36, 16, 5, 0.1); }
+footer[role="footer"] { background: #fbfbfb; }
 /* line 33, ../sass/screen.scss */
 footer[role="footer"] section[role="meta"], footer[role="footer"] section[role="copyright"] { padding: 2.75em 1.4em; }
 /* line 34, ../sass/screen.scss */
