@@ -3,7 +3,7 @@
 <head>
 	<?php include 'lib/partials/_meta.inc' ?>
 	<?php include 'lib/partials/_scripts.inc' ?>
-	<title>Rapleaf Demo</title>
+	<title>HTML5 Template</title>
 </head>
 <body class="dashboard">
 <div id="StickyWrap" class="wrapper">
